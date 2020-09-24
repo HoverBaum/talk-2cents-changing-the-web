@@ -1,0 +1,191 @@
+import myTheme from './lib/theme'
+export const theme = myTheme
+
+import { Head, Notes } from 'mdx-deck'
+
+import OpeningSlide from './components/opening-slide'
+import SlideHeadline from './components/slide-headline'
+import Boids from './components/boids/Boids'
+import Website from './components/website/Website'
+import BackgroundImage from './components/background-image'
+import OnBackground from './components/on-background'
+import Impact from './components/impact'
+import CustomSplit from './lib/split.layout'
+import Center from './components/center'
+import LargeImage from './components/largeImage'
+
+import WebsiteWithAdsImage from './img/ads.png'
+import WMAnimatedImage from './img/wm-icon-animated.svg'
+import IntersectionImage from './img/intersection.jpg'
+import WiredProgressiveImage from './img/progressive.jpg'
+
+<Head>
+  <title>2cents change the web</title>
+  <meta name="monetization" content="$ilp.uphold.com/DbnmiKGQ4Khj" />
+</Head>
+
+<OpeningSlide
+  title="How I earned 2 cents 🤑"
+  subtitle="and why that changes the internet"
+  author="Hendrik Wallbaum"
+/>
+
+---
+
+<SlideHeadline sectionTitle="Agenda"></SlideHeadline>
+
+- Monetizing content on the web
+- The bigger picture
+- A look into the future
+
+<Boids />
+
+---
+
+<SlideHeadline sectionTitle="Monetization">Status quo</SlideHeadline>
+
+- Default monetization strategy today is: ads
+
+<Website>
+
+
+<img src={WebsiteWithAdsImage} />
+
+</Website>
+
+
+<Notes>
+  You know, these lovely things that sometimes cover >50% of the screen and are
+  unrelated to the content you care about.
+</Notes>
+
+---
+
+<SlideHeadline sectionTitle="Monetization">Status quo</SlideHeadline>
+
+- Alternatively: paid subscriptions or donations
+
+- Many options: PayPal, Bank transfer, BTC, Patreon, custom subscription, etc.
+
+- Users end up with unused accounts and their data sold for profit.
+
+<Notes>Many platforms to donate or subscribe through</Notes>
+
+---
+
+<SlideHeadline sectionTitle="Monetization">The problems</SlideHeadline>
+
+- The web was never build for payments.
+- We have a diverse landscape of providers.
+- "Winner takes it all" applies.
+
+---
+
+<SlideHeadline sectionTitle="Web Monitization"></SlideHeadline>
+
+<CustomSplit>
+
+
+- A clean foundation instead of something alien to the web.
+- Based on the interledger format send small amounts of money.
+- As long as you stay, you support the creator.
+- These slides are Web Monatized.
+
+<img
+  src={WMAnimatedImage}
+  style="width: 50%; height: auto; margin: 0 auto; display: block;"
+/>
+
+</CustomSplit>
+
+
+---
+
+<SlideHeadline sectionTitle="Web Monitization">It's awesome</SlideHeadline>
+
+- Allows content creators to monitize without ads or subscriptions.
+- An open protocol that many can contribute to.
+- The protocols are the central piece, not the platforms.
+
+---
+
+<SlideHeadline sectionTitle="Web Monitization">
+  progressive enhancement
+</SlideHeadline>
+
+<LargeImage src={WiredProgressiveImage} />
+
+---
+
+<SlideHeadline sectionTitle="Web Monitization">Implementation</SlideHeadline>
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Monetized Site</title>
+    <meta name="monetization" content="$wallet.example.com/alice" />
+  </head>
+</html>
+```
+
+---
+
+<SlideHeadline sectionTitle="Web Monitization">Ecosystem</SlideHeadline>
+
+- [Coil.com](https://coil.com/) as provider for users.
+- Uphold and GateHub as Wallets for creators.
+- [Grant For the Web initiative](https://www.grantfortheweb.org/).
+
+<br />
+
+- Platforms for: blogging, videostreams, videogames and more.
+
+---
+
+<BackgroundImage
+  src={IntersectionImage}
+  blur
+  creditLink="https://unsplash.com/photos/k5w21D7PgMk"
+  credit="@dnevozhai on Unsplash"
+/>
+
+<Impact>Bigger picture</Impact>
+
+<Notes>
+
+
+## The bigger picture
+
+- Web monetization is doing for content monetization what many others are doing for different fields → Breaking up the monopole of platforms. Moving responsibilities to protocols gives governance back to the public.
+- Decentralized services are the future.
+
+</Notes>
+
+
+---
+
+### Activity Push
+
+- Another example of moving responsibilities to the protocol.
+- Activity push is a protocol for "social media platforms". It can replace Facebook, Twitter and Instagram.
+
+---
+
+### Mastodon
+
+- Talks a bit about the page, maybe feature two different looks.
+
+---
+
+## Cermon
+
+- Protocols allow more freedom and creativity. They are what we should aim for.
+- After all, there isn't a big single mainframe we connect to to create our websites through a proprietary editor. The web is and has always been, in it's foundations open and free. Build upon a strong foundation of protocols.
+- A move towards protocols instead of platforms is a move towards the roots of the web.
+
+---
+
+## Closing
+
+The move from platforms to protocols has been going for years. Many, recent developments are fueling it. Still, it may be decades before we see the realization of this brave new world. But as consultants at the forefront of digitalization we should keep a look out for what is to come.
