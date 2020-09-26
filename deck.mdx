@@ -14,10 +14,14 @@ import CustomSplit from './lib/split.layout'
 import Center from './components/center'
 import LargeImage from './components/largeImage'
 
+import Mastodon from './components/mastodon/Mastodon'
+
 import WebsiteWithAdsImage from './img/ads.png'
 import WMAnimatedImage from './img/wm-icon-animated.svg'
 import IntersectionImage from './img/intersection.jpg'
 import WiredProgressiveImage from './img/progressive.jpg'
+import ActivityPubImage from './img/ActivityPub.png'
+import MastodonLogoImage from './img/mastodon.png'
 
 <Head>
   <title>2cents change the web</title>
@@ -44,7 +48,7 @@ import WiredProgressiveImage from './img/progressive.jpg'
 
 <SlideHeadline sectionTitle="Monetization">Status quo</SlideHeadline>
 
-- Default monetization strategy today is: ads
+- Default monetization strategy today: ads
 
 <Website>
 
@@ -69,6 +73,8 @@ import WiredProgressiveImage from './img/progressive.jpg'
 
 - Users end up with unused accounts and their data sold for profit.
 
+<Boids />
+
 <Notes>Many platforms to donate or subscribe through</Notes>
 
 ---
@@ -78,6 +84,10 @@ import WiredProgressiveImage from './img/progressive.jpg'
 - The web was never build for payments.
 - We have a diverse landscape of providers.
 - "Winner takes it all" applies.
+
+> Our data ends up being the product, sold to god knows who doing god knows what with it.
+
+<Boids />
 
 ---
 
@@ -107,6 +117,8 @@ import WiredProgressiveImage from './img/progressive.jpg'
 - An open protocol that many can contribute to.
 - The protocols are the central piece, not the platforms.
 
+<Boids />
+
 ---
 
 <SlideHeadline sectionTitle="Web Monitization">
@@ -124,7 +136,7 @@ import WiredProgressiveImage from './img/progressive.jpg'
 <html>
   <head>
     <title>Web Monetized Site</title>
-    <meta name="monetization" content="$wallet.example.com/alice" />
+    <meta name="monetization" content="$ilp.uphold.com/DbnmiKGQ4Khj" />
   </head>
 </html>
 ```
@@ -140,6 +152,8 @@ import WiredProgressiveImage from './img/progressive.jpg'
 <br />
 
 - Platforms for: blogging, videostreams, videogames and more.
+
+<Boids />
 
 ---
 
@@ -165,16 +179,45 @@ import WiredProgressiveImage from './img/progressive.jpg'
 
 ---
 
-### Activity Push
+<SlideHeadline sectionTitle="ActivityPub"></SlideHeadline>
+
+<CustomSplit>
+
 
 - Another example of moving responsibilities to the protocol.
 - Activity push is a protocol for "social media platforms". It can replace Facebook, Twitter and Instagram.
+- [ActivityPub.rocks](https://activitypub.rocks/)
+
+<img
+  src={ActivityPubImage}
+  style="background-color: white; padding: 1rem; border-radius: 1rem; width: 90%; margin: 0 auto; display: block;"
+/>
+
+</CustomSplit>
+
+
+<Boids />
 
 ---
 
-### Mastodon
+<SlideHeadline sectionTitle="ActivityPub">Mastodon</SlideHeadline>
 
-- Talks a bit about the page, maybe feature two different looks.
+<CustomSplit>
+
+
+- Mastodon is a federated Microblogging platform (Twitter).
+- Many different platforms are hosted, focussed on different topics with different rules.
+- You can host your own.
+
+<img
+  src={MastodonLogoImage}
+  style="width: 50%; margin: 0 auto; display: block;"
+/>
+
+</CustomSplit>
+
+
+<Mastodon />
 
 ---
 
