@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core'
 import useColors from '../lib/useColors'
 
-export const BackgroundImage = ({ credit, creditLink, onImage }) => {
+export const Credit = ({ credit, creditLink, onImage }) => {
   const colors = useColors()
   const color = onImage ? 'lightgrey' : colors.text
   return (
@@ -24,7 +24,7 @@ export const BackgroundImage = ({ credit, creditLink, onImage }) => {
         `}
       >
         {creditLink ? (
-          <a href={creditLink} target='_blank' style={{ color }}>
+          <a href={creditLink} target="_blank" style={{ color }}>
             {credit}
           </a>
         ) : (
@@ -35,4 +35,4 @@ export const BackgroundImage = ({ credit, creditLink, onImage }) => {
   )
 }
 
-export default BackgroundImage
+export default Credit

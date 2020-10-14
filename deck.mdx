@@ -13,8 +13,12 @@ import Impact from './components/impact'
 import CustomSplit from './lib/split.layout'
 import Center from './components/center'
 import LargeImage from './components/largeImage'
+import Credit from './components/credit'
+import ClosingSlide from './components/closing-slide'
 
 import Mastodon from './components/mastodon/Mastodon'
+import WebM from './components/WebM'
+import WebMInit from './components/WebMInit'
 
 import WebsiteWithAdsImage from './img/ads.png'
 import WMAnimatedImage from './img/wm-icon-animated.svg'
@@ -22,6 +26,7 @@ import IntersectionImage from './img/intersection.jpg'
 import WiredProgressiveImage from './img/progressive.jpg'
 import ActivityPubImage from './img/ActivityPub.png'
 import MastodonLogoImage from './img/mastodon.png'
+import TrainWaitingImage from './img/train-waiting.jpg'
 
 <Head>
   <title>2cents change the web</title>
@@ -33,6 +38,8 @@ import MastodonLogoImage from './img/mastodon.png'
   subtitle="and why that changes the internet"
   author="Hendrik Wallbaum"
 />
+
+<WebMInit />
 
 ---
 
@@ -85,7 +92,7 @@ import MastodonLogoImage from './img/mastodon.png'
 - We have a diverse landscape of providers.
 - "Winner takes it all" applies.
 
-> Our data ends up being the product, sold to god knows who doing god knows what with it.
+Our data ends up being the product, sold to god knows who doing god knows what with it 😕
 
 <Boids />
 
@@ -143,6 +150,14 @@ import MastodonLogoImage from './img/mastodon.png'
 
 ---
 
+<SlideHeadline sectionTitle="Web Monitization">In Action</SlideHeadline>
+
+This slide-deck is Web Monetized. Below you can check the state and how much you have already contributed to these slides.
+
+<WebM />
+
+---
+
 <SlideHeadline sectionTitle="Web Monitization">Ecosystem</SlideHeadline>
 
 - [Coil.com](https://coil.com/) as provider for users.
@@ -154,6 +169,14 @@ import MastodonLogoImage from './img/mastodon.png'
 - Platforms for: blogging, videostreams, videogames and more.
 
 <Boids />
+
+---
+
+<SlideHeadline sectionTitle="Interledger">www for money</SlideHeadline>
+
+> Interledger is an open protocol suite for sending payments across different ledgers. Like the Internet, connectors route packets of money across independent networks. The open architecture and minimal protocol enable interoperability for any value transfer system.
+
+<Credit creditLink="https://interledger.org/" credit="Interledger.org" />
 
 ---
 
@@ -221,7 +244,7 @@ import MastodonLogoImage from './img/mastodon.png'
 
 ---
 
-## Cermon
+<SlideHeadline sectionTitle="Bottom Line"></SlideHeadline>
 
 - Protocols allow more freedom and creativity. They are what we should aim for.
 - After all, there isn't a big single mainframe we connect to to create our websites through a proprietary editor. The web is and has always been, in it's foundations open and free. Build upon a strong foundation of protocols.
@@ -229,6 +252,27 @@ import MastodonLogoImage from './img/mastodon.png'
 
 ---
 
-## Closing
+<BackgroundImage
+  src={TrainWaitingImage}
+  blur
+  creditLink="https://unsplash.com/photos/QoulhuQp3gU"
+  credit="@markuswinkler on Unsplash"
+/>
 
-The move from platforms to protocols has been going for years. Many, recent developments are fueling it. Still, it may be decades before we see the realization of this brave new world. But as consultants at the forefront of digitalization we should keep a look out for what is to come.
+<Impact>Waiting for the hype-🚂</Impact>
+
+---
+
+<SlideHeadline sectionTitle="Closing words"></SlideHeadline>
+
+The move from platforms to protocols has been going for years. Many, recent developments are fueling it. Still, it may be decades before we see the realization of this brave new world. As consultants at the forefront of digitalization we should keep a look out for what is to come.
+
+---
+
+<ClosingSlide
+  title="How I earned 2 cents 🤑"
+  author="Hendrik Wallbaum"
+  repoLink="https://github.com/HoverBaum/talk-2cents-changing-the-web"
+/>
+
+<Boids left />
