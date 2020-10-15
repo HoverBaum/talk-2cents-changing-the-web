@@ -10,7 +10,7 @@ export const Credit = ({ credit, creditLink, onImage }) => {
       css={css`
         position: absolute;
         bottom: 1rem;
-        ${onImage ? 'left: 1rem;' : ''}
+        ${onImage && 'left: 1rem;'}
         font-size: 1rem;
         z-index: 1001;
       `}

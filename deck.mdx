@@ -15,6 +15,7 @@ import Center from './components/center'
 import LargeImage from './components/largeImage'
 import Credit from './components/credit'
 import ClosingSlide from './components/closing-slide'
+import BackgroundBubbles from './components/background-bubbles'
 
 import Mastodon from './components/mastodon/Mastodon'
 import WebM from './components/WebM'
@@ -34,12 +35,22 @@ import TrainWaitingImage from './img/train-waiting.jpg'
 </Head>
 
 <OpeningSlide
-  title="How I earned 2 cents 🤑"
+  title="🤑 How I earned 2 cents"
   subtitle="and why that changes the internet"
   author="Hendrik Wallbaum"
 />
 
+<BackgroundBubbles />
+
 <WebMInit />
+
+---
+
+<OpeningSlide
+  title="🤑 How I earned 2 cents"
+  subtitle="and why that changes the internet"
+  author="Hendrik Wallbaum"
+/>
 
 ---
 
@@ -104,7 +115,7 @@ Our data ends up being the product, sold to god knows who doing god knows what w
 
 
 - A clean foundation instead of something alien to the web.
-- Based on the interledger format send small amounts of money.
+- Based on the interledger protocol; send small amounts of money.
 - As long as you stay, you support the creator.
 - These slides are Web Monatized.
 
@@ -121,7 +132,7 @@ Our data ends up being the product, sold to god knows who doing god knows what w
 <SlideHeadline sectionTitle="Web Monitization">It's awesome</SlideHeadline>
 
 - Allows content creators to monitize without ads or subscriptions.
-- An open protocol that many can contribute to.
+- A W3C specified protocol (draft) that many can contribute to.
 - The protocols are the central piece, not the platforms.
 
 <Boids />
@@ -269,10 +280,25 @@ The move from platforms to protocols has been going for years. Many, recent deve
 
 ---
 
+<SlideHeadline sectionTitle="Links">Further reading</SlideHeadline>
+
+- https://webmonetization.org/
+- https://interledger.org/
+- https://activitypub.rocks/
+- https://joinmastodon.org/
+- 30 min. on Web Monetization Talk by Stefan Thomas https://www.youtube.com/watch?v=ZckA-__R2sc
+
+---
+
 <ClosingSlide
-  title="How I earned 2 cents 🤑"
+  title="🤑 How I earned 2 cents"
   author="Hendrik Wallbaum"
   repoLink="https://github.com/HoverBaum/talk-2cents-changing-the-web"
+/>
+
+<Credit
+  creditLink="https://talks.hoverbaum.net/"
+  credit="talks.hoverbaum.net"
 />
 
 <Boids left />
